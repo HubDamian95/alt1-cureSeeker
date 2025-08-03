@@ -1,0 +1,20 @@
+ICON CREATION INSTRUCTIONS
+==========================
+
+Since the canvas library requires Visual Studio build tools, here's how to create a simple icon:
+
+1. Use an online tool like:
+   - https://www.favicon-generator.org/
+   - https://favicon.io/
+   - https://www.favicon-generator.org/
+
+2. Create a 32x32 pixel icon with:
+   - Background: Dark blue (#2c3e50)
+   - Medical cross: Red (#e74c3c)
+   - Text: "CS" in white (#ecf0f1)
+
+3. Save as "icon.png" in the root directory
+
+4. Alternative: Use the provided icon.svg file and convert it to PNG
+
+The icon should represent a medical cross with "CS" (CureSeeker) text. 

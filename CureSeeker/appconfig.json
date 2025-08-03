@@ -1,0 +1,27 @@
+{
+  "appName": "CureSeeker",
+  "description": "A farming cure seeker app for RuneScape Player-Owned Farms",
+  "version": "1.0.0",
+  "author": "HubDamian95",
+  "homepage": "https://github.com/HubDamian95/alt1-cureSeeker",
+  "icon": "icon.png",
+  "permissions": [
+    "pixel"
+  ],
+  "features": [
+    "overlay"
+  ],
+  "overlays": [
+    {
+      "name": "CureSeeker Overlay",
+      "file": "dist/index.html",
+      "default": true
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Toggle CureSeeker",
+      "key": "ctrl+shift+c"
+    }
+  ]
+} 

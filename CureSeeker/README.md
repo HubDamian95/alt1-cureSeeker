@@ -37,11 +37,20 @@ A RuneScape Alt1 app for diagnosing animal diseases in Player-Owned Farms. This 
 
 1. **Install Alt1**: Download and install Alt1 from [https://runeapps.org/alt1](https://runeapps.org/alt1)
 
-2. **Load the app**: Open the built `dist/index.html` file in Alt1
+2. **Create an icon**: 
+   - Use the provided `icon.svg` file and convert it to PNG
+   - Or create a 32x32 pixel icon with a medical cross and "CS" text
+   - Save as `icon.png` in the root directory
 
-3. **Grant permissions**: Allow the app to read screen pixels when prompted
+3. **Load the app**: 
+   - Open Alt1
+   - Go to "Add App" → "From Folder"
+   - Select your CureSeeker folder
+   - The app should appear with the configuration from `appconfig.json`
 
-4. **Examine animals**: When examining diseased animals in RuneScape, the app will match the examination text to identify the disease
+4. **Grant permissions**: Allow the app to read screen pixels when prompted
+
+5. **Examine animals**: When examining diseased animals in RuneScape, the app will match the examination text to identify the disease
 
 ## Development
 
