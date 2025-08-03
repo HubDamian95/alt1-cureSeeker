@@ -2,12 +2,15 @@
     "compilerOptions": {
       "target": "es6",
       "module": "es6",
+      "moduleResolution": "node",
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "outDir": "./dist/",
-      "rootDir": "./src"
+      "rootDir": "./src",
+      "lib": ["es6", "dom"],
+      "allowSyntheticDefaultImports": true
     },
     "include": ["src/**/*"]
   }

@@ -1,11 +1,18 @@
-import * as alt1 from "alt1";
 import { bodyparts } from "./diseases";
+import { Alt1Window } from "./types";
+
+// Declare global window with alt1
+declare global {
+    interface Window {
+        alt1?: any;
+    }
+}
 
 // Wait for Alt1 to be ready
 if (!window.alt1) {
     alert("This app requires Alt1 to be installed and running.\nGet it from https://runeapps.org/alt1");
-} else if (!alt1.permissionPixel) {
-    alt1.identifyAppUrl("./appconfig.json");
+} else if (!window.alt1.permissionPixel) {
+    window.alt1.identifyAppUrl("./appconfig.json");
     alert("This app needs permission to read the screen. Please grant permission and reload.");
 }
 
@@ -29,7 +36,7 @@ class FarmingCureSeeker {
 
     private testDiagnosis() {
         // This is where you'd normally get text from chat
-        // For now we'll use a test case
+        // For now we'll use a test case - this should match "Curse" disease
         const testText = "The animal's breath smells faintly of sulphur.";
         this.analyzeText(testText);
     }
